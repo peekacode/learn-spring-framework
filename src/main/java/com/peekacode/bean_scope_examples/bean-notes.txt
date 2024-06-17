@@ -1,0 +1,25 @@
+
+Java Singleton vs Spring Singleton - 99% both are same
+
+Java Singleton
+- Is a design pattern
+- One Object per JVM
+
+Spring Singleton
+- One Object per Spring Container
+
+Scopes
+    - Singleton
+        1. One Instance per Spring IOC Container
+        2. Same Bean reused
+        3. @Scope (value = ConfigurableBeanFactory.SCOPE_SINGLETON) or default
+        4. Default
+        5. Stateless
+
+    - Prototype
+        1. Many Instances per Spring IOC Container
+        2. New instance is created everytime when Bean is referred to
+        3. @Scope (value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+        4. Not Default
+        5. Stateful Beans
+
