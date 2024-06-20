@@ -1,2 +1,1 @@
-test
-test-2
+This repo has concepts related to spring framework
